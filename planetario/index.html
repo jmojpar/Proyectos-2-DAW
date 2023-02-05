@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <h1>P l a n e t a r i o</h1>
+    <img id="estrella1" src="imgs/estrella1.png" type="hidden">
+    <img id="estrella2" src="imgs/estrella1.png" type="hidden">
+    <img id="estrella3" src="imgs/estrella1.png" type="hidden">
+    <img id="estrella4" src="imgs/estrella1.png" type="hidden">
+    <div id="planetas">
+        <img id="planetaIzq" src="imgs/2mercury.png">
+        <img id="planetaCentro" src="imgs/1sol.png" onmouseover="infoPlanetaOver(this)" onmouseout="infoPlanetaOut(this)">
+        <img id="planetaDer" src="imgs/10neptuno.png">
+    </div>
+    <div id="info"></div>
+    <div id="botones">
+        <p id="Informacion"></p>
+        <button class="btn planetaAtras" onclick="carrusel('atrasar')">Atrasar planeta</button>
+        <button class="btn planetaAdelante" onclick="carrusel('avanzar')">Avanzar planeta</button>
+    </div>
+</body>
+<script src="js/planetas.js"></script>
+
+</html>

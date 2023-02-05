@@ -1,0 +1,234 @@
+@import url('https://fonts.cdnfonts.com/css/bukhari-script');
+
+/* #cabecera{
+    width: 500px;
+    height: 500px;
+} */
+
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Bukhari Script', sans-serif;
+    width: 100%;
+    height: 100%;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+/* ---------------------------------------- */
+/* NAVEGADOR */
+/* ---------------------------------------- */
+
+#navbar {
+    width: auto;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(68, 68, 68, 0.2);
+}
+
+#navbar>.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 500px;
+}
+
+.logo {
+
+    margin: auto 20px;
+    float: left;
+    width: 180px;
+    height: 180px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    background-color: white;
+}
+
+.hrRed {
+    border: 2px solid rgb(252, 120, 120);
+    margin-bottom: 4px;
+}
+
+.hrBlack {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+/* ---------------------------------------- */
+/* DESPLEGABLE */
+/* ---------------------------------------- */
+
+#desplegable{
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.combo{
+    background-color: lightgoldenrodyellow;
+    width: 300px;
+    height: 30px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.combo p{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.forma_pago{
+    box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.6);
+    background-color: lightgoldenrodyellow;
+    width: 300px;
+    padding: 10px;
+    list-style-type: none;
+    border-radius: 6px;
+}
+
+.forma_pago li{
+    height: 50px;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    transition: padding 0.2s linear;
+}
+
+.forma_pago li:hover{
+    background-color: darkgray;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.forma_pago li img{
+    margin: 0 10px;
+}
+
+.forma_pago li p{
+    padding-left: 3px;
+}
+
+.gira .fa-regular{
+    transform: rotate(180deg);
+}
+
+.oculto{
+    visibility: hidden;
+}
+
+
+/* ---------------------------------------- */
+/* IMAGENES DE NAVIDAD */
+/* ---------------------------------------- */
+
+.galeria {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1500px;
+    height: 580px;
+    border: 2px solid rgb(156, 243, 255);
+    border-radius: 15px;
+    background-color: rgb(68, 68, 68, 0.1);
+    transition: 0.3;
+}
+
+.galeria:hover .img{
+    filter: grayscale(1);
+}
+
+.imgDiv {
+    margin: 18px 6px 18px 8px;
+    width: 350px;
+    height: 250px;
+    border: 3px solid rgb(255, 136, 136);
+    border-radius: 15px;
+    margin: 2px;
+    overflow: hidden;
+}
+
+.imgDiv:hover .img{
+    filter: grayscale(0);
+}
+
+.imgDiv:hover .caption {
+    opacity: 1;
+}
+
+.figura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img {
+    display: block;
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    transition: 0.3;
+}
+
+.img:hover{
+    transform: scale(1.1);
+}
+
+.caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 18px 0px 15px 0px;
+    width: 100%;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}
+
+.like{
+    width: 28px;
+    height: 28px;
+}
+
+.disLike{
+    width: 30px;
+    height: 30px;
+}
+
+
+
+
+
+/* ---------------------------------------- */
+/* FOOTER */
+/* ---------------------------------------- */
+
+
+.fhrRed {
+    margin-top: 4px;
+    border: 2px solid rgb(252, 120, 120);
+}
+
+.fhrBlack {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: 90px;
+    background-color: rgb(68, 68, 68, 0.2);
+}

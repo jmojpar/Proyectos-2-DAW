@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vota Navidad</title>
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css"
+        integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/cabecera.css">
+
+</head>
+
+<body>
+    <!-- cabecera -->
+    <div class="cabecera" id="cabecera">
+        <p>Vota Navidad</p>
+    </div>
+
+    <!-- nav -->
+    <nav id="navbar">
+        <img class="logo" src="img/web/votaNavidad.png"></img>
+        <div id="desplegable">
+            <div class="combo gira">
+                <p>Géneros de navidad</p>
+                <i class="fa-regular fa-circle-up fa-2x"></i>
+            </div>
+            <ul class="forma_pago oculto">
+                <li>
+                    <img src="img/desplegable/arbol-de-navidad.png" alt="Árbol de Navidad">
+                    <p id="arboles" style="color: green">Árboles de navidad.</p>
+                </li>
+                <li>
+                    <img src="img/desplegable/casa-de-navidad.png" alt="Árbol de Navidad">
+                    <p id="casas" style="color: orange">Casas de navidad.</p>
+                </li>
+                <li>
+                    <img src="img/desplegable/galleta-de-jengibre.png" alt="Árbol de Navidad">
+                    <p id="recetas" style="color: brown">Recetas de navidad.</p>
+                </li>
+                <li>
+                    <img src="img/desplegable/muneco-de-nieve.png" alt="Árbol de Navidad">
+                    <p id="snowman" style="color: black">Muñecos de nieve.</p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- lineas de colores -->
+    <hr class="hrBlack">
+    <hr class="hrRed">
+
+    <!-- imagenes -->
+    <div class="galeria">
+        <div class="imagenes">
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (1).jpg">
+                    <figcaption class="caption">
+                        <img id="img1L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img1D)">
+                        <img id="img1D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img1L)">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (2).jpg">
+                    <figcaption class="caption">
+                        <img id="img2L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img2D)">
+                        <img id="img2D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img2L)">
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="imagenes">
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (3).jpg">
+                    <figcaption class="caption">
+                        <img id="img3L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img3D)">
+                        <img id="img3D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img3L)">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (4).jpg">
+                    <figcaption class="caption">
+                        <img id="img4L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img4D)">
+                        <img id="img4D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img4L)">
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="imagenes">
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (5).jpg">
+                    <figcaption class="caption">
+                        <img id="img5L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img5D)">
+                        <img id="img5D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img5L)">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (6).jpg">
+                    <figcaption class="caption">
+                        <img id="img6L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img6D)">
+                        <img id="img6D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img6L)">
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="imagenes">
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (7).jpg">
+                    <figcaption class="caption">
+                        <img id="img7L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img7D)">
+                        <img id="img7D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img7L)">
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="imgDiv">
+                <figure class="figura">
+                    <img class="img" src="img/casas/casas (8).jpg">
+                    <figcaption class="caption">
+                        <img id="img8L" class="like" src="img/web/corazonS.png" onclick="like(this.id,img8D)">
+                        <img id="img8D" class="disLike" src="img/web/corazonRotoS.png" onclick="disLike(this.id,img8L)">
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/votaNavidad.js"></script>
+    <script src="js/desplegable.js"></script>
+    <script src="js/cabecera.js"></script>
+
+</body>
+<!-- lineas de colores -->
+<hr class="fhrRed">
+<hr class="fhrBlack">
+<!-- footer -->
+<div class="footer">
+
+</div>
+
+</html>
